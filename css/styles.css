@@ -642,6 +642,51 @@ button, input, select, textarea { font: inherit; }
   margin-bottom: 8px;
 }
 
+.pub-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.pub-link:hover { color: var(--adobe-red); }
+.pub-link .pub-arrow {
+  font-size: 0.75em;
+  opacity: 0.5;
+  transition: transform 0.2s var(--ease), opacity 0.2s;
+  display: inline-block;
+}
+.pub-link:hover .pub-arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+.pub-doi {
+  color: rgba(255,255,255,0.45);
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255,255,255,0.2);
+  transition: color 0.2s, border-color 0.2s;
+}
+.pub-doi:hover { color: var(--adobe-red); border-color: var(--adobe-red); }
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--adobe-red);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: transform 0.2s var(--ease), letter-spacing 0.2s;
+}
+.card-link:hover {
+  transform: translateX(3px);
+}
+
 /* =========================================================
    CLOSING
    ========================================================= */
