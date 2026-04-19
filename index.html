@@ -62,23 +62,23 @@
   <section class="metric-band">
     <div class="metric">
       <span class="metric-value" data-count="100" data-suffix="+">0</span>
-      <span class="metric-label">Live production tables</span>
+      <span class="metric-label">Live Baccarat tables</span>
     </div>
     <div class="metric">
       <span class="metric-value" data-count="3" data-suffix="">0</span>
       <span class="metric-label">Provisional patents</span>
     </div>
     <div class="metric">
-      <span class="metric-value" data-count="70" data-suffix="%">0</span>
+      <span class="metric-value" data-count="70" data-suffix="%+">0</span>
       <span class="metric-label">Defect detection lift</span>
     </div>
     <div class="metric">
-      <span class="metric-value" data-count="60" data-suffix="%">0</span>
-      <span class="metric-label">Model size reduction</span>
+      <span class="metric-value" data-count="80" data-suffix="%">0</span>
+      <span class="metric-label">Annotation time cut</span>
     </div>
     <div class="metric">
-      <span class="metric-value" data-count="94" data-suffix=".7%">0</span>
-      <span class="metric-label">Pathology accuracy</span>
+      <span class="metric-value" data-count="2" data-suffix="×">0</span>
+      <span class="metric-label">Inference speedup (INT8)</span>
     </div>
   </section>
 
@@ -100,12 +100,19 @@
         <div class="node-body">
           <h3>Senior Machine Learning Engineer</h3>
           <p class="node-org">Cogniac Corporation</p>
+          <p class="node-vertical">Casino Gaming</p>
           <ul>
-            <li>Deployed the <strong>world's first AI-automated player rating system</strong> on 100+ live Baccarat tables — production at Manila and Sri Lanka.</li>
-            <li>Led end-to-end development of a smart blackjack table: <strong>YOLACT</strong> segmentation, <strong>ViT</strong> classification, point-count chip detection, K-Means clustering. Deployed at Melco Manila. <strong>Three provisional patents.</strong></li>
-            <li>Introduced the segmentation pipeline and integrated YOLACT for manufacturing inspection — <strong>70%+ defect-detection lift</strong>, helping a client post their best safety record in 2023.</li>
-            <li>Added <strong>SAM auto-labeling</strong> to the annotation platform — higher accuracy, shorter annotation cycles on large vision datasets.</li>
-            <li>Architected quantization (FP32 → FP16 / INT8) — <strong>lower inference latency without hurting model quality.</strong></li>
+            <li>Shipped a vision-powered, <strong>AI-automated player rating system at the edge</strong> across 100+ live Baccarat tables in Asia.</li>
+            <li>Engineered an end-to-end <strong>smart blackjack table</strong>: segmentation card detection, <strong>ViT</strong> suit/rank classification, <strong>YOLO</strong> point-count chip detection, K-Means player–card association, customizable game-state logic, dynamic side bets, calibration workflows. Work contributed to <strong>3 provisional patents.</strong></li>
+            <li>Optimized inference to run <strong>3+ tables per Cogniac Edgeflow device</strong> — doubling revenue from this client.</li>
+            <li>Built an <strong>LLM-powered post-game analytics dashboard</strong> — enabling pit bosses to place top-performing dealers on high-stakes tables, cutting fraud-related losses.</li>
+          </ul>
+          <p class="node-vertical">Manufacturing &amp; Railway</p>
+          <ul>
+            <li>Architected a new segmentation pipeline into the Cogniac platform and fine-tuned <strong>RF-DETR-Seg, SegFormer, ViT, SAM, DINO</strong> on manufacturing inspection workflows — <strong>70%+ defect-detection lift</strong> on targeted use cases.</li>
+            <li>Fine-tuned <strong>YOLACT</strong> for real-time crack detection on railways — helping a client achieve their best safety record in 2023.</li>
+            <li>Built a <strong>multi-agent, human-in-the-loop annotation</strong> pipeline — <strong>80% reduction in annotation time</strong> and <strong>30% label-quality improvement</strong> on two tested workflows.</li>
+            <li>Architected platform-wide <strong>post-training quantization</strong> (FP32 / FP16 → INT8) — <strong>2× lower inference latency</strong> with no meaningful accuracy loss.</li>
           </ul>
         </div>
       </li>
@@ -129,23 +136,6 @@
       <li class="node">
         <div class="node-dot" aria-hidden="true"></div>
         <div class="node-meta">
-          <span class="node-date">2020 — 2021</span>
-          <span class="node-place">New York, NY</span>
-        </div>
-        <div class="node-body">
-          <h3>Machine Learning Intern</h3>
-          <p class="node-org">IntelinAir</p>
-          <ul>
-            <li>Foliar pest &amp; deficiency classification for mobile deployment via <strong>CoreML.</strong></li>
-            <li><strong>60% model-size reduction</strong> via quantization with no accuracy loss — enabling faster on-device inference.</li>
-            <li>Generated synthetic training data with <strong>VAE and Conditional VAE</strong> to handle class imbalance and scarce labels.</li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="node">
-        <div class="node-dot" aria-hidden="true"></div>
-        <div class="node-meta">
           <span class="node-date">2019 — 2020</span>
           <span class="node-place">New York, NY</span>
         </div>
@@ -153,8 +143,9 @@
           <h3>Computer Vision Intern</h3>
           <p class="node-org">IntelinAir</p>
           <ul>
-            <li>Built <strong>large-scale pineapple flower counting</strong> from aerial imagery with deep density estimation on a U-Net backbone. Deployed on AWS.</li>
-            <li>Applied <strong>weakly supervised learning</strong> via relative ranking of density maps to leverage unlabeled data and improve generalization.</li>
+            <li>Built <strong>large-scale pineapple flower counting</strong> from aerial imagery via deep density estimation on a U-Net backbone — deployed on <strong>AWS.</strong> Published in Frontiers in Plant Science.</li>
+            <li>Applied <strong>weakly supervised learning</strong> via relative ranking of density maps to leverage unlabeled data.</li>
+            <li>Detected cancerous cells in <strong>gigapixel pathology images</strong> — preprocessed at two zoom levels, encoded via Inception V3, decoded via Conv2D-Transpose. <strong>94.71% accuracy.</strong></li>
           </ul>
         </div>
       </li>
@@ -189,10 +180,10 @@
         <div class="card-badge">Sb</div>
         <div class="card-body">
           <h3>Smart Blackjack Table</h3>
-          <p class="card-sub">End-to-end vision system · Melco Manila</p>
-          <p>YOLACT instance segmentation for cards and chips, ViT classification, point-count chip detection via K-Means clustering. Three provisional patents.</p>
+          <p class="card-sub">End-to-end vision system · 3 provisional patents</p>
+          <p>Segmentation-based card detection, ViT suit/rank classification, YOLO point-count chip detection, K-Means player–card association. Game-state logic, dynamic side bets, and calibration workflows on the Cogniac Edgeflow.</p>
           <div class="chips">
-            <span>YOLACT</span><span>ViT</span><span>K-Means</span><span>Edge</span>
+            <span>Segmentation</span><span>ViT</span><span>YOLO</span><span>K-Means</span><span>Edge</span>
           </div>
         </div>
       </article>
@@ -201,10 +192,34 @@
         <div class="card-badge">Bc</div>
         <div class="card-body">
           <h3>AI-Automated Player Rating</h3>
-          <p class="card-sub">100+ live Baccarat tables · Manila, Sri Lanka</p>
-          <p>World's first AI-automated player rating system in production casino operations. Vision-driven behavioral scoring in real time.</p>
+          <p class="card-sub">100+ live Baccarat tables · Asia</p>
+          <p>Vision-powered player rating at the edge. Optimized to run 3+ tables per Edgeflow device — <strong>doubling revenue</strong> from the client. LLM-powered post-game analytics dashboard cut fraud-related losses.</p>
           <div class="chips">
-            <span>Real-time CV</span><span>Production</span><span>Scale</span>
+            <span>Real-time CV</span><span>Edge</span><span>LLM Agents</span><span>Production</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cc-card" data-tilt style="--card-grad-a:#FA0F00;--card-grad-b:#7A0800;">
+        <div class="card-badge">Mf</div>
+        <div class="card-body">
+          <h3>Manufacturing &amp; Railway Segmentation</h3>
+          <p class="card-sub">Platform pipeline · 70%+ defect detection</p>
+          <p>Architected a new segmentation pipeline into the Cogniac platform — fine-tuned RF-DETR-Seg, SegFormer, ViT, SAM, DINO. YOLACT for real-time rail crack detection — <strong>best safety record, 2023.</strong></p>
+          <div class="chips">
+            <span>RF-DETR-Seg</span><span>SegFormer</span><span>SAM</span><span>DINO</span><span>YOLACT</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cc-card" data-tilt style="--card-grad-a:#9999FF;--card-grad-b:#4B2AAD;">
+        <div class="card-badge">Hl</div>
+        <div class="card-body">
+          <h3>Multi-Agent HITL Annotation</h3>
+          <p class="card-sub">Proof-of-concept · 2 tested workflows</p>
+          <p>Multi-agent, human-in-the-loop annotation pipeline that offloads routine labeling from annotators. <strong>80% reduction</strong> in annotation time and <strong>30% label-quality improvement.</strong></p>
+          <div class="chips">
+            <span>LLM Agents</span><span>HITL</span><span>Annotation</span>
           </div>
         </div>
       </article>
@@ -213,7 +228,7 @@
         <div class="card-badge">Pc</div>
         <div class="card-body">
           <h3>Gigapixel Pathology Detection</h3>
-          <p class="card-sub">Jan–Jun 2020 · 94.71% accuracy</p>
+          <p class="card-sub">IntelinAir · 94.71% accuracy</p>
           <p>Preprocessed gigapixel pathology images at two zoom levels, encoded through Inception V3 to extract 2048-d activations. Decoder trained via Conv2D-Transpose to produce the true mask.</p>
           <div class="chips">
             <span>Inception V3</span><span>Conv2D-T</span><span>Gigapixel</span>
@@ -226,7 +241,7 @@
         <div class="card-body">
           <h3>Pineapple Density Estimation</h3>
           <p class="card-sub">Frontiers in Plant Science, 2020</p>
-          <p>Large-scale pineapple flower counting from aerial imagery using deep density estimation on a U-Net backbone. Deployed on AWS. Published.</p>
+          <p>Large-scale pineapple flower counting from aerial imagery using deep density estimation on a U-Net backbone. Deployed on AWS. Weakly supervised learning via relative ranking of density maps.</p>
           <div class="chips">
             <span>U-Net</span><span>Weakly-Supervised</span><span>AWS</span>
           </div>
@@ -245,37 +260,43 @@
       <div class="skill-group">
         <h4>Programming</h4>
         <div class="chips chips-lg">
-          <span>Python</span><span>C</span><span>C++</span><span>SQL</span><span>MATLAB</span>
+          <span>Python</span><span>C++</span><span>MATLAB</span>
         </div>
       </div>
       <div class="skill-group">
         <h4>ML / DL Frameworks</h4>
         <div class="chips chips-lg">
-          <span>PyTorch</span><span>TensorFlow 2</span><span>Keras</span><span>Scikit-learn</span><span>Hugging Face</span><span>CoreML</span><span>ONNX</span>
+          <span>PyTorch</span><span>TensorFlow</span><span>CoreML</span><span>ONNX</span><span>TensorRT</span>
         </div>
       </div>
       <div class="skill-group">
         <h4>Computer Vision</h4>
         <div class="chips chips-lg">
-          <span>OpenCV</span><span>YOLO</span><span>YOLACT</span><span>ViT</span><span>U-Net</span><span>PSPNet</span><span>Mask R-CNN</span><span>SAM</span>
+          <span>OpenCV</span><span>YOLO</span><span>YOLACT</span><span>ViT</span><span>U-Net</span><span>PSPNet</span><span>RF-DETR-Seg</span><span>SegFormer</span><span>SAM</span><span>DINO</span>
         </div>
       </div>
       <div class="skill-group">
         <h4>LLMs &amp; Agents</h4>
         <div class="chips chips-lg">
-          <span>LLMs</span><span>Agents</span><span>Agentic Workflows</span><span>Prompt Engineering</span>
+          <span>LLMs</span><span>Multi-Agent Systems</span><span>Google Agent Development Kit</span><span>HITL Workflows</span>
         </div>
       </div>
       <div class="skill-group">
-        <h4>MLOps &amp; Cloud</h4>
+        <h4>Data &amp; Cloud</h4>
         <div class="chips chips-lg">
-          <span>AWS</span><span>GCP</span><span>Docker</span><span>Git</span><span>CI/CD</span><span>Edge Inference</span>
+          <span>AWS</span><span>GCP</span><span>Apache Spark</span><span>Hadoop</span><span>Git</span><span>Edge Inference</span>
         </div>
       </div>
       <div class="skill-group">
         <h4>Techniques</h4>
         <div class="chips chips-lg">
-          <span>Quantization (FP16/INT8)</span><span>Active Learning</span><span>Weakly Supervised</span><span>VAE</span><span>LSTM</span><span>RL</span>
+          <span>PTQ (FP32/FP16 → INT8)</span><span>Active Learning</span><span>Weakly Supervised</span><span>Bayesian Methods</span><span>Siamese Networks</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Embedded / Sim</h4>
+        <div class="chips chips-lg">
+          <span>Proteus</span><span>Keil uVision</span><span>AVR Studio</span><span>Scilab LaTeX</span><span>SUMO</span>
         </div>
       </div>
     </div>
@@ -323,15 +344,15 @@
         </p>
 
         <p>
-          Reading that felt like reading my own job description, just at a different scale. For the last four years at <strong>Cogniac</strong>, I've been shipping <strong>computer vision and deep learning</strong> systems into live casinos, manufacturing floors, and clinical labs — places where a model has to actually <em>work</em>, day after day, under real latency and real data. Swap "cards on a table" for "moments in a customer journey" and the core skill is the same: teach a model to find structure in messy input, train it until it generalizes, and serve it at scale.
+          Reading that felt like reading my own job description, just at a different scale. For the last four years at <strong>Cogniac</strong>, I've been shipping <strong>computer vision and deep learning</strong> systems into live casinos, manufacturing floors, railways, and clinical labs — places where a model has to actually <em>work</em>, day after day, under real latency and real data. Swap "cards on a table" for "moments in a customer journey" and the core skill is the same: teach a model to find structure in messy input, train it until it generalizes, and serve it at scale.
         </p>
 
         <p>
-          Every technique I've reached for maps directly onto your mission. <strong>Segmentation at scale</strong> — YOLACT, U-Net, PSPNet, Mask R-CNN — is the engine of <em>audience creation</em>: finding the right people, the right objects, the right signal inside a sea of pixels and events. <strong>ViT classification</strong> and <strong>density estimation</strong> are how you do <em>personalization at scale</em> without losing nuance. <strong>SAM auto-labeling</strong> in our annotation platform is the human-in-the-loop compression that makes <em>journey optimization</em> feasible. <strong>FP16 / INT8 quantization</strong> is what turns a research model into something you can actually serve to a billion-user customer base. And the <strong>LLM agent workflows</strong> I've been building are the substrate that makes Generative AI usable <em>inside</em> a product rather than beside it.
+          Every technique I've reached for maps directly onto your mission. <strong>Segmentation at scale</strong> — RF-DETR-Seg, SegFormer, ViT, SAM, DINO, YOLACT, U-Net, PSPNet — is the engine of <em>audience creation</em>: finding the right signal inside a sea of pixels and events. <strong>ViT classification</strong> and <strong>density estimation</strong> are how you do <em>personalization at scale</em> without losing nuance. A <strong>multi-agent, human-in-the-loop annotation pipeline</strong> I built cut labeling time 80% and lifted label quality 30% — the exact compression that makes <em>journey optimization</em> feasible. Platform-wide <strong>post-training quantization (FP32 / FP16 → INT8)</strong> gave us 2× lower inference latency with no accuracy loss — what turns a research model into something you can actually serve to a billion-user customer base. And the <strong>LLM-powered analytics dashboard</strong> I shipped for pit bosses is the substrate pattern that makes Generative AI usable <em>inside</em> a product rather than beside it.
         </p>
 
         <p>
-          The other half of the description is where I feel most at home — <em>"diverse, lively group of engineers and scientists," "partnering with Adobe Research and other business units."</em> The best ML work I've done has always been cross-disciplinary and creative. At <strong>UCSF</strong> I built biomarker models inside Dr. Amorim's neurology lab. At <strong>IntelinAir</strong> I shipped CoreML models next to agronomists and generated synthetic data with VAEs to handle class imbalance in the field. At <strong>Columbia</strong> I was a TA and RA for Applied Deep Learning. Three provisional patents, a Best Paper Award, and a Frontiers in Plant Science publication came out of exactly the kind of environment you describe: tight iteration, data-driven decisions, bias toward shipping.
+          The other half of the description is where I feel most at home — <em>"diverse, lively group of engineers and scientists," "partnering with Adobe Research and other business units."</em> The best ML work I've done has always been cross-disciplinary and creative. At <strong>UCSF</strong> I built biomarker models inside Dr. Amorim's neurology lab. At <strong>IntelinAir</strong> I shipped density-estimation models on AWS next to agronomists and published the work in Frontiers in Plant Science. At <strong>Columbia</strong> I was a TA for Applied Deep Learning. Three provisional patents, a Best Paper Award, and a peer-reviewed publication came out of exactly the kind of environment you describe: tight iteration, data-driven decisions, bias toward shipping.
         </p>
 
         <p>
@@ -359,9 +380,9 @@
       </div>
 
       <div class="contact-grid">
-        <a class="contact-btn" href="mailto:pp2719@columbia.edu">
+        <a class="contact-btn" href="mailto:prakash.prajwalp@gmail.com">
           <span class="contact-label">Email</span>
-          <span class="contact-value">pp2719@columbia.edu</span>
+          <span class="contact-value">prakash.prajwalp@gmail.com</span>
         </a>
         <a class="contact-btn" href="https://linkedin.com/in/prajwal-prakash7" target="_blank" rel="noopener">
           <span class="contact-label">LinkedIn</span>
